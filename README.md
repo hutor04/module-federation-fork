@@ -1,8 +1,23 @@
 # Microfrontends with module federation
 
 ## Getting Started
-`cd` to each project and run `npm install` and `npm start` to start the each project.
+Run each project separately: 
+`cd` to each project (`home-app`, `dogShower`, `store` and `favourites`) 
+and run: 
+```
+npm install
+npm start
+```
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+You can also open the other apps on the ports listed below:
+| App        | Port    |
+| --------   | ------- |
+| home-app   | 3000    |
+| dogShower  | 3001    |
+| store      | 3002    |
+| favourites | 3003    |
 
 
 ## Composition
@@ -18,14 +33,6 @@ flowchart BT
     F --> H
 ```
 
-## Ports
-| App        | Port    |
-| --------   | ------- |
-| home-app   | 3000    |
-| dogShower  | 3001    |
-| store      | 3002    |
-| favourites | 3003    |
-
 
 ## Thoughts
 
@@ -40,5 +47,3 @@ flowchart BT
 			ii. Shared common library?
 		b. Styles interfering -> use css modules
 		c. Pass classname to MF, så home app can style externally
-	3. Why should I have StoreProvide around home-app?
-        a. Ok around home. But why around each MF? - so it works separately
