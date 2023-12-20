@@ -1,0 +1,44 @@
+.side-panel {
+  background-color: #eebbc3;
+  color: #232946;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: left;
+}
+
+.side-panel__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1 1 auto;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li::before {
+  content: "•";
+  font-size: 130%;
+  line-height: 0;
+  margin: 0 1rem 0 -0.1rem;
+  position: relative;
+  top: 0.08rem;
+  color: #232946;
+}
+
+.clear-button {
+  justify-self: flex-end;
+}
+
+.favourites-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

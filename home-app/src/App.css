@@ -1,0 +1,72 @@
+.app-home {
+  text-align: center;
+  background-color: #232946;
+  color: #fffffe;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.body-side-panel-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  flex: 1 1 auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex: 1 1 auto;
+}
+
+.side-panel {
+  flex: 0 0 350px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: proxima-nova, sans-serif;
+}
+
+img {
+  height: 40vmin;
+  pointer-events: none;
+  border: 3px solid #fffffe;
+  border-radius: 10px;
+}
+
+button {
+  background-color: rgb(238, 187, 195);
+  color: rgb(35, 41, 70);
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  padding: 1.2rem 2rem;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 10px;
+}
+button.seconadary {
+  background-color: #b8c1ec;
+}
+
+.buttons-bar {
+  display: flex;
+  gap: 2rem;
+}
