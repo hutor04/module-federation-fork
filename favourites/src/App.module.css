@@ -1,4 +1,4 @@
-.side-panel {
+.sidePanel {
   background-color: #eebbc3;
   color: #232946;
   padding: 2rem;
@@ -8,7 +8,7 @@
   text-align: left;
 }
 
-.side-panel__container {
+.sidePanel__container {
   display: flex;
   flex-direction: column;
   gap: 2rem;

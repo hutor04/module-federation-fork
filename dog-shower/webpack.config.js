@@ -6,7 +6,7 @@ module.exports = {
   entry: "./src/entry.js",
   mode: "development",
   devServer: {
-    port: 3001, // port 3001 for header-app
+    port: 3001,
   },
   module: {
     rules: [
@@ -33,11 +33,14 @@ module.exports = {
       template: "./public/index.html",
     }),
     new ModuleFederationPlugin({
-      name: "header",
+      name: "dogShower",
       filename: "remoteEntry.js", // output a js file
       exposes: {
         // which exposes
-        "./Header": "./src/App", // a module 'Header' from './src/App'
+        "./DogShower": "./src/App", // a module 'Header' from './src/App'
+      },
+      remotes: {
+        store: "store@http://localhost:3002/remoteEntry.js",
       },
       shared: {
         // and shared

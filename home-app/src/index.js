@@ -1,13 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { StoreProvider } from "store/store";
 import App from "./App";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-
-//const { StoreProvider } = lazy(() => import("store/store"));
-
-import { StoreProvider } from "store/store";
-console.log("StoreProvider", StoreProvider);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -1,0 +1,14 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.dogImage {
+  height: 40vmin;
+  pointer-events: none;
+  border: 3px solid #fffffe;
+  border-radius: 10px;
+}

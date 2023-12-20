@@ -1,12 +1,12 @@
 import React from "react";
 import { useStore } from "store/store";
-import "./App.css";
+import styles from "./App.module.css";
 
-function FavouritesPanel() {
+function FavouritesPanel({ className }) {
   const { breeds, emptyBreeds } = useStore();
   return (
-    <div className="side-panel">
-      <div className="side-panel__container">
+    <div className={`${styles.sidePanel} ${className}`}>
+      <div className={styles.sidePanel__container}>
         <h2>Favourites &#129505;</h2>
         {breeds.length === 0 ? (
           <p>You have no favourites yet</p>

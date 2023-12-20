@@ -1,6 +1,5 @@
 import React from "react";
 import { useStore } from "store/store";
-import "./App.css";
 import FavouritesPanel from "./FavouritesPanel";
 
 function App() {

@@ -42,7 +42,7 @@ module.exports = {
       // This URL provides three important pieces of information: the module's name is "Header", it is hosted on "localhost:3001",
       // and its module definition is "remoteEntry.js".
       remotes: {
-        header: "header@http://localhost:3001/remoteEntry.js",
+        dogShower: "dogShower@http://localhost:3001/remoteEntry.js",
         store: "store@http://localhost:3002/remoteEntry.js",
         favourites: "favourites@http://localhost:3003/remoteEntry.js",
       },

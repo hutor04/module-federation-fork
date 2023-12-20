@@ -17,16 +17,11 @@
   flex: 1 1 auto;
 }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
+.dog-shower {
   flex: 1 1 auto;
 }
 
-.side-panel {
+.favourites {
   flex: 0 0 350px;
 }
 
@@ -41,12 +36,7 @@ body {
   font-family: proxima-nova, sans-serif;
 }
 
-img {
-  height: 40vmin;
-  pointer-events: none;
-  border: 3px solid #fffffe;
-  border-radius: 10px;
-}
+
 
 button {
   background-color: rgb(238, 187, 195);
