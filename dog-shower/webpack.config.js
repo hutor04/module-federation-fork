@@ -37,7 +37,8 @@ module.exports = {
       filename: "remoteEntry.js", // output a js file
       exposes: {
         // which exposes
-        "./DogShower": "./src/App", // a module 'Header' from './src/App'
+        "./DogShower": "./src/App",
+        "./DogText": "./src/RemoteText",
       },
       remotes: {
         store: "store@http://localhost:3002/remoteEntry.js",
